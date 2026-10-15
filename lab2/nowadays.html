@@ -16,15 +16,6 @@
         .sub-title {
             text-align: center;
         }
-
-        .asia {
-            background-color: grey;
-            color: white;
-        }
-        .molochka {
-            background-color: white;
-            color: black;
-        }
         .asia ul {
             background-color: transparent;
             color: black;
@@ -38,6 +29,18 @@
         .dessert > li:nth-child(4) {
             background-color: lightblue;
         }
+
+        .buy_list >li >ul >li:nth-child(odd){
+
+            background:gray;
+            color:blue
+
+        }
+        .buy_list >li >ul >li:nth-child(even){
+
+            background:white;
+
+        }
     </style>
 
 </head>
@@ -47,7 +50,7 @@
 <a href="index.html" class="back-link">Назад на головну</a>
 <h2 class="sub-title">Мій типовий список покупок</h2>
 
-<ul>
+<ul class = "buy_list">
     <li class="asia">Відділ азійської кухні:
         <ul>
             <li>Латтяо</li>
