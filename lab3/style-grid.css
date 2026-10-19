@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+h1 { margin-bottom: 30px; }
+h2 { margin-bottom: 10px; }
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+.content-box {
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 15px;
+    position: relative;
+}
+
+.caption-badge {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+}
+
+.badge-1 { background-color: purple; }
+.badge-2 { background-color: darkblue; }
+.badge-3 { background-color: pink; color: black; }
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box-3 {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 993px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .box-3 {
+
+        grid-column: span 1;
+    }
+}
+
+.links {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: dimgray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.links a:hover {
+    background-color: black;
+}
