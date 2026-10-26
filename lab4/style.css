@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: dimgrey;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    background: lightgray;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.back-link-custom {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: indigo;
+    font-style: italic;
+    text-decoration: underline;
+    background: transparent;
+    padding: 0;
+    font-weight: normal;
+}
+
+.index-page .wd {
+    text-align: center;
+    font-size: 24px;
+}
+
+.index-page .intro-text {
+    font-size: 120%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.biography:link {
+    color: blue;
+}
+
+.biography:visited {
+    color: darkblue;
+}
+
+.nowadays:link {
+    color: greenyellow;
+}
+
+.nowadays:visited {
+    color: green;
+}
+
+.friends:link {
+    color: palevioletred;
+}
+
+.friends:visited {
+    color: darkred;
+}
+
+.gallery:link {
+    color: orange;
+}
+
+.gallery:visited {
+    color: saddlebrown;
+}
+.bio-page .bio-title {
+    text-align: center;
+    font-size: 22px;
+}
+
+.bio-page .back {
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.bio-page .toc-title {
+    text-align: center;
+}
+
+.bio-page .toc-buttons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bio-page .btn:link,
+.bio-page .btn:visited {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    margin: 5px;
+}
+
+.bio-page .btn:hover {
+    background-color: magenta;
+    color: white;
+}
+
+.bio-page .btn:active {
+    background-color: yellow;
+    color: black;
+}
+
+.bio-page .bio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bio-page .bio-block {
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 120%;
+}
+
+.bio-page .section-title {
+    font-size: 120%;
+}
+
+.bio-page .bio-content {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.bio-page .to-toc {
+    font-weight: bold;
+    margin-top: auto;
+    align-self: flex-start;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.bio-page .up {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: blue;
+}
+
+.bg-basic {
+    background-color: aqua;
+    color: black;
+}
+
+.bg-childhood {
+    background-color: green;
+    color: aliceblue;
+}
+
+.bg-school {
+    background-color: yellow;
+    color: black;
+}
+
+.bg-after-school {
+    background-color: brown;
+    color: aliceblue;
+}
+
+.bg-university {
+    background-color: black;
+    color: aliceblue;
+}
+.nowadays-page h1,
+.nowadays-page h2 {
+    text-align: center;
+}
+
+.lists-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.list-section ul,
+.list-section ol {
+    margin-left: 40px;
+}
+
+.list-section:first-child ul ul li {
+    color: blue;
+    text-decoration: underline;
+}
+
+.list-section:first-child ul ul li:nth-child(odd) {
+    background-color: gray;
+    color: white;
+}
+
+.list-section:last-child > ol > li:nth-child(4) {
+    background-color: lightblue;
+}
+.friends-page h1,
+.friends-page h2 {
+    text-align: center;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.friends-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.friends-table th,
+.friends-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.friends-table th {
+    font-size: 110%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.friends-table tbody tr:nth-child(odd) {
+    background-color: gray;
+    color: white;
+}
+
+.friends-table tbody tr:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+@media (min-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        width: calc(50% - 10px);
+    }
+
+    .bio-page .bio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bio-page .bio-block:nth-child(5) {
+        grid-column: span 2;
+    }
+
+    .friends-table th {
+        font-size: 120%;
+    }
+
+    .friends-table td {
+        font-size: 110%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-links {
+        flex-wrap: nowrap;
+    }
+
+    .nav-links a {
+        width: 100%;
+    }
+
+    .bio-page .bio-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .bio-page .bio-block:nth-child(1),
+    .bio-page .bio-block:nth-child(2),
+    .bio-page .bio-block:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .bio-page .bio-block:nth-child(4),
+    .bio-page .bio-block:nth-child(5) {
+        grid-column: span 3;
+    }
+
+    .lists-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .list-section {
+        flex: 1;
+    }
+
+    .friends-table th {
+        font-size: 130%;
+    }
+
+    .friends-table td {
+        font-size: 120%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-item:nth-child(3) {
+        grid-column: span 1;
+    }
+}
