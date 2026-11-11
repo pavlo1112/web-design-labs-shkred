@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: dimgrey;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.block {
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.block-1 {
+    background-color: deepskyblue;
+    color: white;
+}
+.block-2 {
+    background-color: limegreen;
+    color: black;
+}
+.block-3 {
+    background-color: red;
+    color: white;
+}
+.block-4 {
+    background-color: yellow;
+    color: dimgrey;
+}
+
+.block-title {
+    font-size: 120%;
+    margin-bottom: 15px;
+}
+
+.block-1 .block-title {
+    color: yellow;
+}
+.block-2 .block-title {
+    color: purple;
+}
+.block-3 .block-title {
+    color: lime;
+}
+.block-4 .block-title {
+    color: red;
+}
+
+.block p, .block ul, .block table, .block a {
+    font-family: 'Lora', serif;
+}
+
+.block-2 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.block-2 ul ul {
+    list-style-type: circle;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.image-wrapper {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.image-wrapper a {
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.image-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.bottom-right-text {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .block-1, .block-2 {
+        grid-column: span 1;
+    }
+
+    .block-3, .block-4 {
+        grid-column: span 1;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .block-1, .block-2, .block-3 {
+        grid-column: span 1;
+    }
+
+    .block-4 {
+        grid-column: span 3;
+    }
+}
+
+@media (min-width: 1201px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .block-1, .block-2, .block-3, .block-4 {
+        grid-column: span 1;
+    }
+}
